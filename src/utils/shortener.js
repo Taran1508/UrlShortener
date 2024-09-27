@@ -7,7 +7,7 @@ function shortenUrl(string){
     let pathname = originalUrl.pathname;
     const id = shortId.generate();
     urls[id] = href;
-    const shortenedUrl = `http://theous.netlify.app/${id}`
+    const shortenedUrl = `http://theous.vercel.app/${id}`
     //const shortenedUrl = `http://localhost:/${id}`
     console.log(id);
     console.log(`${urls[id]}`);
