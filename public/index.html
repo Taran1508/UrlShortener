@@ -3,13 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/rainfall" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/rainfall');
+</style>
+
     <title>URL-Shortener</title>
 </head>
 <body>
-    <p>URL-Shortener</p>
-    <form action="/shorten" method="post">
-        <input type="url" name="url" id="url">
-        <input type="submit" value="Shorten URL">
-    </form>
+    <header aria-label="Breadcrumb">
+        <nav>
+            <span id="brand">TDW</span>
+            <div>
+                <a href="https://www.instagram.com/theousdevworks" id="insta" target="_blank"><b>Instagram</b></a>
+                <a href="https://www.linkedin.com/in/theous-devworks-93150b32b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " id="lkdn" target="_blank"><b>LinkedIn</b></a>
+            </div>
+        </nav>
+        <section id="section1">
+            <h1>URL-Shortener</h1>
+            <h2>Shorten Your Links, Maximize Your Impact!</h2>
+            <h3>Create shorter, cleaner URLs in seconds and track their performance effortlessly.</h3>
+            <h4>Shorten Your URL for free Now &dArr;</h4>
+        <form action="/shorten" method="post">
+            <input type="url" name="url" id="url" placeholder="Enter your URL">
+            <!-- <input type="submit" value="Shorten URL"> -->
+             <button type="submit" class="button-50"> <b>Shorten URL</b> </button>
+
+             
+        </form>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+
+            <!-- How It Works Section -->
+            <section id="how-it-works">
+                <h2>How It Works</h2>
+                <ol>
+                    <li><strong>Step 1:</strong> Enter your URL - Paste the long URL you want to shorten.</li>
+                    <li><strong>Step 2:</strong> Shorten the URL - Click the button and watch your link transform into a shorter version.</li>    
+                    <li><strong>Step 3:</strong> Copy the URL - Click the button and copy your link's shorter version.</li>    
+                </ol>
+            </section>
+    
+            <!-- Benefits Section -->
+            <section class="benefits">
+                <h2>Benefits</h2>
+                <ul>
+                    <li><strong>Increase Engagement:</strong> Shorter links are more appealing and easier to share.</li>
+                    <li><strong>Improve Click-Through Rates:</strong> Well-crafted links drive higher traffic to your content.</li>
+                </ul>
+            </section>
+             <br>
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <h2>What Our Users Say</h2>
+                <blockquote>"This URL shortener is incredibly easy to use and has helped me improve my social media engagement!" – John M</blockquote>
+                <blockquote>"I love this shortener! its easy to use, helped me to optimize my campaigns." – Teja R</blockquote>
+            </section>
+            <br>
+    
+            <!-- FAQ Section -->
+            <section class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <ul>
+                    <li><strong>Is my data secure?</strong> Yes, we use industry-standard encryption to protect your data.</li>
+                    <li><strong>Can I edit my short link after creating it?</strong> No, users cannot edit their short links.</li>
+                </ul>
+            </section>
+    
+        </div>
+    
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 TheousDevWorks. All rights reserved. | <a href="/privacypolicy">Privacy Policy</a> | <a href="/termsofservice">Terms of Service</a> | <a href="https://www.instagram.com/theousdevworks " target="_blank"><i class='bx bxl-instagram'></i></a> | <a href="https://www.linkedin.com/in/theous-devworks-93150b32b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class='bx bxl-linkedin-square'></i></a></p>
+    </footer>
+
 </body>
 </html>

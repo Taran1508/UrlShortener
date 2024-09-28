@@ -18,6 +18,14 @@ app.get('/',(req,res)=>{
     res.sendFile(join(__dirname,'../public/index.html'));
 })
 
+app.get('/privacypolicy',(req,res)=>{
+    res.sendFile(join(__dirname,'../public/pp.html'));
+})
+
+app.get('/termsofservice',(req,res)=>{
+    res.sendFile(join(__dirname,'../public/tos.html'));
+})
+
 app.use('/',route);
 
 app.get('/:id', async (req, res) => {
