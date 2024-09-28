@@ -9,7 +9,7 @@ const { urls } = require('./utils/shortener');
 const app = express();
 const server = createServer(app);
 
-app.use(express.static(join(__dirname,'public')));
+app.use(express.static(join(__dirname,'..','public')));
 app.use(bodyParser.urlencoded({extended: false }));
 app.use(bodyParser.json());
 
