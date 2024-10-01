@@ -11,6 +11,7 @@ const app = express();
 const server = createServer(app);
 
 app.use(express.static(join(__dirname,'..','public')));
+app.use(express.static(join(__dirname,'..','views')));
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({extended: false }));
 app.use(bodyParser.json());
@@ -24,8 +25,8 @@ app.use(
         directives: {
           defaultSrc: ["'self'"],
           scriptSrc: ["'self'"],
-          styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
-          fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+          styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com','https://fonts.cdnfonts.com/css/rainfall'],
+          fontSrc: ["'self'", 'https://fonts.gstatic.com', 'https://fonts.cdnfonts.com/css/rainfall','https://fonts.cdnfonts.com/s/28061/RAINFALL.woff'],
           imgSrc: ["'self'", 'data:'],
           connectSrc: ["'self'"],
           reportUri: '/csp-violation-report-endpoint',
@@ -39,6 +40,12 @@ app.use(
 app.get('/',(req,res)=>{
     res.sendFile(join(__dirname,'../public/index.html'));
 })
+
+// app.get('/check',(req,res)=>{
+//   const result = `www.google.com`;
+//     res.render('views',{result});
+// })
+// Debugging endpoint for ejs
 
 app.get('/privacypolicy',(req,res)=>{
     res.sendFile(join(__dirname,'../public/pp.html'));
