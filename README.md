@@ -6,13 +6,11 @@ A simple URL shortener application that allows users to shorten long URLs, manag
 
 - Shorten long URLs into a concise, shareable link
 - Redirect shortened URLs to the original URLs
-- Track the number of clicks for each shortened URL
-- User authentication to manage their shortened URLs (if applicable)
 
 ## Tech Stack
 
 - **Backend**: Node.js, Express
-- **Frontend**: HTML, CSS, JavaScript (or a frontend framework/library if used)
+- **Frontend**: HTML, CSS, JavaScript 
 - **Other Dependencies**: 
   - [Shortid](https://www.npmjs.com/package/shortid) (for generating unique short URLs)
   - [dotenv](https://www.npmjs.com/package/dotenv) (for environment variables)
